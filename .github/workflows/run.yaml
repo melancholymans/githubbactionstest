@@ -4,9 +4,5 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
       - uses: actions/checkout@v2
-      - run: |
-          ls -al
-          cd .github/workflows/
-          ls -al
+      - run: go run main.go
